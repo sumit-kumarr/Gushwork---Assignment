@@ -1,0 +1,187 @@
+/* --- CSS Reset & Variables --- */
+:root {
+    --bg-main: #111522; /* Dark blue background */
+    --bg-table: #1e2433; /* Slightly lighter blue/gray for table */
+    --bg-table-header: #282f40; /* Header background */
+    --text-white: #ffffff;
+    --text-gray: #9ca3af;
+    --border-color: #333d52; /* Subtle divider lines */
+    --border-radius: 12px;
+    --font-main: 'Inter', sans-serif;
+}
+
+
+/* --- Section Layout --- */
+.tech-specs-section {
+    font-family: var(--font-main);
+    background-color: var(--bg-main);
+    color: var(--text-white);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container7 {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* --- Typography --- */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+    color: var(--text-gray);
+    font-size: 1rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+}
+
+/* --- Table Styling --- */
+.table-wrapper {
+    background-color: var(--bg-table);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    overflow: hidden; /* Ensures corners stay rounded */
+    margin-bottom: 40px;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.specs-table th {
+    background-color: var(--bg-table-header);
+    color: var(--text-gray);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.specs-table td {
+    padding: 18px 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.specs-table td:first-child {
+    color: var(--text-gray);
+    width: 40%;
+}
+
+.specs-table td:last-child {
+    color: var(--text-white);
+    width: 60%;
+}
+
+/* Remove bottom border from the last row */
+.specs-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Utilities inside table */
+.flex-align {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flag-icon {
+    width: 18px;
+    height: auto;
+    border-radius: 2px;
+}
+
+/* --- Button Styling --- */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: var(--text-white);
+    border: 1px solid var(--border-color);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    font-family: var(--font-main);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--text-gray);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .specs-table th, 
+    .specs-table td {
+        padding: 14px 16px;
+    }
+    
+    .specs-table td {
+        font-size: 0.85rem;
+    }
+    
+    .specs-table td:first-child {
+        width: 45%;
+    }
+    
+    .specs-table td:last-child {
+        width: 55%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Stack columns on very small screens */
+    .specs-table thead {
+        display: none;
+    }
+    
+    .specs-table tr {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .specs-table td {
+        border-bottom: none;
+        padding: 4px 0;
+        width: 100% !important;
+    }
+    
+    .specs-table td:first-child {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 2px;
+    }
+    
+    .specs-table td:last-child {
+        font-size: 0.95rem;
+    }
+}
