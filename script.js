@@ -485,3 +485,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+
+// script.js
+// Basic interactivity; expand as needed (e.g., for modal popups on button clicks)
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Add click handlers for Learn More buttons (example: log or open modal)
+  const learnMoreBtns = document.querySelectorAll('.learn-more-btn');
+  learnMoreBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+          // Replace with actual functionality, e.g., scroll to section or open modal
+          console.log('Learn More clicked');
+          alert('Learn More functionality would go here (e.g., navigate to product page).');
+      });
+  });
+
+  // Add click handler for Talk to Expert button
+  const talkExpertBtn = document.querySelector('.talk-expert-btn');
+  talkExpertBtn.addEventListener('click', function() {
+      // Replace with actual functionality, e.g., open contact form
+      console.log('Talk to Expert clicked');
+      alert('Talk to Expert functionality would go here (e.g., open contact modal).');
+  });
+
+  // Smooth scroll or other enhancements can be added here
+});
