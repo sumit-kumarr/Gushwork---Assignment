@@ -30,6 +30,7 @@
   }
   
   .features-grid {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 32px;
@@ -55,7 +56,7 @@
   .icon-wrapper {
     width: 78px;
     height: 78px;
-    background: linear-gradient(135deg, #0ea5e9, #0284c8);
+    /* background: linear-gradient(135deg, #0ea5e9, #0284c8); */
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -63,7 +64,7 @@
     border-radius: 16px;
     margin-bottom: 28px;
     font-size: 2.35rem;
-    box-shadow: 0 8px 20px rgba(14, 165, 233, 0.25);
+    /* box-shadow: 0 8px 20px rgba(14, 165, 233, 0.25); */
   }
   
   .feature-card h3 {

@@ -221,6 +221,7 @@ h2 { font-size: 2rem; margin-bottom: 1rem; }
 
 .trusted-section{
   display:flex;
+  width: 100%;
   margin-top:30px;
   flex-direction:column;
   gap:10px;
@@ -232,5 +233,7 @@ h2 { font-size: 2rem; margin-bottom: 1rem; }
 .logos-gridd{
   display:flex;
   justify-content:space-between;
+  width: 100%;
+  flex-wrap: wrap;
   gap:20px;
 }
