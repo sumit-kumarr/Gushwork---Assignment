@@ -111,26 +111,26 @@
     justify-content: center;
 }
 
-.download-btn {
+.download-btnn {
     display: flex;
     align-items: center;
     gap: 10px;
     background: transparent;
-    color: var(--text-white);
+    color: white;
     border: 1px solid var(--border-color);
     padding: 12px 24px;
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 500;
     font-family: var(--font-main);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
-.download-btn:hover {
+/* .download-btn:hover {
     background-color: rgba(255, 255, 255, 0.05);
     border-color: var(--text-gray);
-}
+} */
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
