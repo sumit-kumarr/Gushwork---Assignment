@@ -38,7 +38,7 @@
     border-radius: 18px;
     padding: 8px;
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
   
   .resource-item {
@@ -76,7 +76,7 @@
   
   /* Blue CTA Section */
   .cta-section {
-    background: #1e40af;
+    background: #2B3990;
     border-radius: 24px;
     padding: 85px 60px;
     color: white;
